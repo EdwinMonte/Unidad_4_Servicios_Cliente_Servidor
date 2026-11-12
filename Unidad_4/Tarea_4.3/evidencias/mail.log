@@ -1,0 +1,6 @@
+Nov 12 17:49:50 mail postfix/smtpd[21586]: D64DC80B7E: client=unknown[10.44.0.10], sasl_method=PLAIN, sasl_username=correo1
+Nov 12 17:49:50 mail postfix/cleanup[21597]: D64DC80B7E: message-id=<179450579063.21592.16716830074660687431@empresa.test>
+Nov 12 17:49:50 mail postfix/qmgr[21278]: D64DC80B7E: from=<correo1@empresa.test>, size=550, nrcpt=1 (queue active)
+Nov 12 17:49:50 mail postfix/local[21572]: D64DC80B7E: passing <correo2@empresa.test> to transport=lmtp
+Nov 12 17:49:50 mail postfix/lmtp[21575]: D64DC80B7E: to=<correo2@empresa.test>, relay=mail.empresa.test[private/dovecot-lmtp], delay=0.07, delays=0.02/0/0/0.04, dsn=2.0.0, status=sent (250 2.0.0 <correo2@empresa.test> ac0NNT789WpQUwAAgupOug Saved)
+Nov 12 17:49:50 mail postfix/qmgr[21278]: D64DC80B7E: removed

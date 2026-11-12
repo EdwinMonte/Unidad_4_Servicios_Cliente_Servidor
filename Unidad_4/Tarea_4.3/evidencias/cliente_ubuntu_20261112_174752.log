@@ -1,0 +1,6 @@
+SMTP 587: certificado verificado, TLSv1.3
+SMTP: correo1 autenticado (235)
+Relay externo rechazado en RCPT: 554 5.7.1 <prueba-externa@example.net>: Relay access denied
+SMTP: 250 2.0.0 Ok: queued as B531F80B6E
+QUEUE_ID=B531F80B6E
+IMAPS 993: certificado verificado, TLSv1.3

@@ -1,0 +1,4 @@
+auth requisite pam_succeed_if.so quiet user ingroup u4correo
+@include common-auth
+account requisite pam_succeed_if.so quiet user ingroup u4correo
+@include common-account

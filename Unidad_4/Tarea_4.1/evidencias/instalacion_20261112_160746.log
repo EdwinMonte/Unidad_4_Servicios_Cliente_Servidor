@@ -1,0 +1,120 @@
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+ens33            UP             192.168.246.134/24 metric 100 fe80::20c:29ff:febe:a20e/64 
+ens37            UP             fe80::20c:29ff:febe:a218/64 
+Unit kea-dhcp4-server.service does not exist, proceeding anyway.
+Created symlink '/run/systemd/system/kea-dhcp4-server.service' → '/dev/null'.
+Obj:1 http://mx.archive.ubuntu.com/ubuntu resolute InRelease
+Des:2 http://mx.archive.ubuntu.com/ubuntu resolute-updates InRelease [137 kB]
+Des:3 http://security.ubuntu.com/ubuntu resolute-security InRelease [137 kB]
+Des:4 http://mx.archive.ubuntu.com/ubuntu resolute-backports InRelease [137 kB]
+Des:5 http://mx.archive.ubuntu.com/ubuntu resolute-updates/main amd64 Packages [868 kB]
+Des:6 http://security.ubuntu.com/ubuntu resolute-security/main amd64 Packages [717 kB]
+Des:7 http://mx.archive.ubuntu.com/ubuntu resolute-updates/main Translation-en [195 kB]
+Des:8 http://mx.archive.ubuntu.com/ubuntu resolute-updates/main amd64 Components [110 kB]
+Des:9 http://mx.archive.ubuntu.com/ubuntu resolute-updates/restricted amd64 Packages [602 kB]
+Des:10 http://mx.archive.ubuntu.com/ubuntu resolute-updates/restricted Translation-en [125 kB]
+Des:11 http://mx.archive.ubuntu.com/ubuntu resolute-updates/universe amd64 Packages [389 kB]
+Des:12 http://mx.archive.ubuntu.com/ubuntu resolute-updates/universe Translation-en [122 kB]
+Des:13 http://mx.archive.ubuntu.com/ubuntu resolute-updates/universe amd64 Components [201 kB]
+Des:14 http://mx.archive.ubuntu.com/ubuntu resolute-backports/universe amd64 Components [1.056 B]
+Des:15 http://security.ubuntu.com/ubuntu resolute-security/main Translation-en [157 kB]
+Des:16 http://security.ubuntu.com/ubuntu resolute-security/main amd64 Components [46,7 kB]
+Des:17 http://security.ubuntu.com/ubuntu resolute-security/restricted amd64 Packages [586 kB]
+Des:18 http://security.ubuntu.com/ubuntu resolute-security/restricted Translation-en [122 kB]
+Des:19 http://security.ubuntu.com/ubuntu resolute-security/universe amd64 Packages [220 kB]
+Des:20 http://security.ubuntu.com/ubuntu resolute-security/universe Translation-en [72,5 kB]
+Des:21 http://security.ubuntu.com/ubuntu resolute-security/universe amd64 Components [62,7 kB]
+Descargados 5.008 kB en 2s (2.093 kB/s)
+Leyendo lista de paquetes...
+Leyendo lista de paquetes...
+Creando árbol de dependencias...
+Leyendo la información del estado...
+bind9-dnsutils ya está en su versión más reciente (1:9.20.24-1ubuntu0.5).
+fijado bind9-dnsutils como instalado manualmente.
+Resolviendo dependencias...
+Se instalarán los siguientes paquetes adicionales:
+  dns-root-data kea-common liblog4cplus-2.0.5t64 libmysqlclient24 libpq5
+  mysql-common
+Paquetes sugeridos:
+  bind9-doc kea-doc libpq-oauth
+Se instalarán los siguientes paquetes NUEVOS:
+  bind9 bind9-utils dns-root-data kea-common kea-dhcp4-server
+  liblog4cplus-2.0.5t64 libmysqlclient24 libpq5 mysql-common
+0 actualizados, 9 nuevos se instalarán, 0 para eliminar y 18 no actualizados.
+Se necesita descargar 7.367 kB de archivos.
+Se utilizarán 30,7 MB de espacio de disco adicional después de esta operación.
+Des:1 http://mx.archive.ubuntu.com/ubuntu resolute-updates/main amd64 bind9-utils amd64 1:9.20.24-1ubuntu0.5 [186 kB]
+Des:2 http://mx.archive.ubuntu.com/ubuntu resolute/main amd64 dns-root-data all 2025080400build1 [6.022 B]
+Des:3 http://mx.archive.ubuntu.com/ubuntu resolute-updates/main amd64 bind9 amd64 1:9.20.24-1ubuntu0.5 [259 kB]
+Des:4 http://mx.archive.ubuntu.com/ubuntu resolute/main amd64 liblog4cplus-2.0.5t64 amd64 2.0.8-1.1ubuntu4 [198 kB]
+Des:5 http://mx.archive.ubuntu.com/ubuntu resolute/main amd64 mysql-common all 5.8+1.1.1ubuntu2 [7.002 B]
+Des:6 http://mx.archive.ubuntu.com/ubuntu resolute-updates/main amd64 libmysqlclient24 amd64 8.4.13-0ubuntu0.26.04.2 [1.257 kB]
+Des:7 http://mx.archive.ubuntu.com/ubuntu resolute-updates/main amd64 libpq5 amd64 18.6-0ubuntu0.26.04.1 [163 kB]
+Des:8 http://mx.archive.ubuntu.com/ubuntu resolute/main amd64 kea-common amd64 3.0.3-1 [4.878 kB]
+Des:9 http://mx.archive.ubuntu.com/ubuntu resolute/main amd64 kea-dhcp4-server amd64 3.0.3-1 [412 kB]
+Descargados 7.367 kB en 2s (4.201 kB/s)
+Seleccionando el paquete bind9-utils previamente no seleccionado.
+(Leyendo la base de datos ... (Leyendo la base de datos ... 5%(Leyendo la base de datos ... 10%(Leyendo la base de datos ... 15%(Leyendo la base de datos ... 20%(Leyendo la base de datos ... 25%(Leyendo la base de datos ... 30%(Leyendo la base de datos ... 35%(Leyendo la base de datos ... 40%(Leyendo la base de datos ... 45%(Leyendo la base de datos ... 50%(Leyendo la base de datos ... 55%(Leyendo la base de datos ... 60%(Leyendo la base de datos ... 65%(Leyendo la base de datos ... 70%(Leyendo la base de datos ... 75%(Leyendo la base de datos ... 80%(Leyendo la base de datos ... 85%(Leyendo la base de datos ... 90%(Leyendo la base de datos ... 95%(Leyendo la base de datos ... 100%(Leyendo la base de datos ... 104320 ficheros o directorios instalados actualmente.)
+Preparando para desempaquetar .../0-bind9-utils_1%3a9.20.24-1ubuntu0.5_amd64.deb ...
+Desempaquetando bind9-utils (1:9.20.24-1ubuntu0.5) ...
+Seleccionando el paquete dns-root-data previamente no seleccionado.
+Preparando para desempaquetar .../1-dns-root-data_2025080400build1_all.deb ...
+Desempaquetando dns-root-data (2025080400build1) ...
+Seleccionando el paquete bind9 previamente no seleccionado.
+Preparando para desempaquetar .../2-bind9_1%3a9.20.24-1ubuntu0.5_amd64.deb ...
+Desempaquetando bind9 (1:9.20.24-1ubuntu0.5) ...
+Seleccionando el paquete liblog4cplus-2.0.5t64:amd64 previamente no seleccionado.
+Preparando para desempaquetar .../3-liblog4cplus-2.0.5t64_2.0.8-1.1ubuntu4_amd64.deb ...
+Desempaquetando liblog4cplus-2.0.5t64:amd64 (2.0.8-1.1ubuntu4) ...
+Seleccionando el paquete mysql-common previamente no seleccionado.
+Preparando para desempaquetar .../4-mysql-common_5.8+1.1.1ubuntu2_all.deb ...
+Desempaquetando mysql-common (5.8+1.1.1ubuntu2) ...
+Seleccionando el paquete libmysqlclient24:amd64 previamente no seleccionado.
+Preparando para desempaquetar .../5-libmysqlclient24_8.4.13-0ubuntu0.26.04.2_amd64.deb ...
+Desempaquetando libmysqlclient24:amd64 (8.4.13-0ubuntu0.26.04.2) ...
+Seleccionando el paquete libpq5:amd64 previamente no seleccionado.
+Preparando para desempaquetar .../6-libpq5_18.6-0ubuntu0.26.04.1_amd64.deb ...
+Desempaquetando libpq5:amd64 (18.6-0ubuntu0.26.04.1) ...
+Seleccionando el paquete kea-common previamente no seleccionado.
+Preparando para desempaquetar .../7-kea-common_3.0.3-1_amd64.deb ...
+Desempaquetando kea-common (3.0.3-1) ...
+Seleccionando el paquete kea-dhcp4-server previamente no seleccionado.
+Preparando para desempaquetar .../8-kea-dhcp4-server_3.0.3-1_amd64.deb ...
+Desempaquetando kea-dhcp4-server (3.0.3-1) ...
+Configurando liblog4cplus-2.0.5t64:amd64 (2.0.8-1.1ubuntu4) ...
+Configurando mysql-common (5.8+1.1.1ubuntu2) ...
+update-alternatives: utilizando /etc/mysql/my.cnf.fallback para proveer /etc/mysql/my.cnf (my.cnf) en modo automático
+Configurando libpq5:amd64 (18.6-0ubuntu0.26.04.1) ...
+Configurando libmysqlclient24:amd64 (8.4.13-0ubuntu0.26.04.2) ...
+Configurando dns-root-data (2025080400build1) ...
+Configurando bind9-utils (1:9.20.24-1ubuntu0.5) ...
+Configurando kea-common (3.0.3-1) ...
+Configurando bind9 (1:9.20.24-1ubuntu0.5) ...
+wrote key file "/etc/bind/rndc.key"
+named-resolvconf.service is a disabled or a static unit, not starting it.
+Created symlink '/etc/systemd/system/bind9.service' → '/usr/lib/systemd/system/named.service'.
+Created symlink '/etc/systemd/system/multi-user.target.wants/named.service' → '/usr/lib/systemd/system/named.service'.
+Configurando kea-dhcp4-server (3.0.3-1) ...
+Failed to preset unit: Unit /run/systemd/system/kea-dhcp4-server.service is masked
+Unit /run/systemd/system/kea-dhcp4-server.service is masked, ignoring.
+/usr/bin/deb-systemd-helper: error: systemctl preset failed on kea-dhcp4-server.service: No such file or directory
+kea-dhcp4-server.service is a disabled or a static unit, not starting it.
+Procesando disparadores para ufw (0.36.2-9build1) ...
+Procesando disparadores para man-db (2.13.1-1build1) ...
+Procesando disparadores para libc-bin (2.43-2ubuntu2.4) ...
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+Configuración anterior: /root/unidad4-41.g9iatzqH
+3: ens37    inet 10.44.0.10/24 brd 10.44.0.255 scope global ens37\       valid_lft forever preferred_lft forever
+default via 192.168.246.2 proto dhcp src 192.168.246.134 metric 100 
+zone empresa.test/IN: loaded serial 1
+zone 0.44.10.in-addr.arpa/IN: loaded serial 1
+Syntax check failed with: Unable to open file /etc/kea/kea-dhcp4.conf

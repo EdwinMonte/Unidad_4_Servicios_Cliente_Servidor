@@ -1,0 +1,29 @@
+compatibility_level = 3.10
+myhostname = mail.empresa.test
+mydomain = empresa.test
+myorigin = $mydomain
+mydestination = $myhostname, localhost.$mydomain, localhost, $mydomain
+inet_interfaces = 10.44.0.10, 127.0.0.1
+inet_protocols = ipv4
+mynetworks = 127.0.0.0/8
+relay_domains =
+default_transport = error:Entrega externa deshabilitada en U4_LAB
+
+local_recipient_maps = texthash:/etc/postfix/recipients_u4
+alias_maps =
+alias_database =
+virtual_alias_maps = texthash:/etc/postfix/aliases_u4
+mailbox_transport = lmtp:unix:private/dovecot-lmtp
+smtpd_relay_restrictions = reject_unauth_destination
+
+smtpd_tls_cert_file = /etc/ssl/certs/u4-mail.crt
+smtpd_tls_key_file = /etc/ssl/private/u4-mail.key
+smtpd_tls_security_level = encrypt
+smtpd_tls_mandatory_protocols = >=TLSv1.2
+smtpd_tls_auth_only = yes
+smtpd_tls_loglevel = 1
+smtpd_sasl_type = dovecot
+smtpd_sasl_path = private/auth
+smtpd_sasl_auth_enable = no
+smtpd_sender_login_maps = texthash:/etc/postfix/sender_login_u4
+maillog_file = /var/log/mail.log

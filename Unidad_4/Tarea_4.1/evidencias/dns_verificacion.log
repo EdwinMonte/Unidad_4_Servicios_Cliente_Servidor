@@ -1,0 +1,20 @@
+2026-11-12T16:31:30+00:00
+active
+active
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+ens33            UP             192.168.246.134/24 metric 100 fe80::20c:29ff:febe:a20e/64 
+ens37            UP             10.44.0.10/24 fe80::20c:29ff:febe:a218/64 
+web.empresa.test.	300	IN	A	10.44.0.10
+www.empresa.test.	300	IN	CNAME	web.empresa.test.
+10.0.44.10.in-addr.arpa. 300	IN	PTR	servidor.empresa.test.
+empresa.test.		300	IN	MX	10 mail.empresa.test.
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 29864
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: f13fb45687619c88010000006af5e9e26defca9a6c756db7 (good)
+;; ANSWER SECTION:
+iana.org.		3361	IN	A	192.0.43.8
+

@@ -1,0 +1,5 @@
+$TTL 300
+@ IN SOA ns.empresa.test. admin.empresa.test. (
+    1 3600 900 604800 300 )
+@  IN NS  ns.empresa.test.
+10 IN PTR servidor.empresa.test.

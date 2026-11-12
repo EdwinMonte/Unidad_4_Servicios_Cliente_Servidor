@@ -1,0 +1,11 @@
+$TTL 300
+@ IN SOA ns.empresa.test. admin.empresa.test. (
+    2 3600 900 604800 300 )
+@        IN NS    ns.empresa.test.
+@        IN MX 10 mail.empresa.test.
+@        IN TXT   "v=spf1 ip4:10.44.0.10 -all"
+ns       IN A     10.44.0.10
+servidor IN A     10.44.0.10
+web      IN A     10.44.0.10
+www      IN CNAME web.empresa.test.
+mail     IN A     10.44.0.10

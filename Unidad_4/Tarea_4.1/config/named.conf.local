@@ -1,0 +1,11 @@
+zone "empresa.test" {
+    type primary;
+    file "/etc/bind/db.empresa.test";
+    allow-transfer { none; };
+};
+
+zone "0.44.10.in-addr.arpa" {
+    type primary;
+    file "/etc/bind/db.rev";
+    allow-transfer { none; };
+};

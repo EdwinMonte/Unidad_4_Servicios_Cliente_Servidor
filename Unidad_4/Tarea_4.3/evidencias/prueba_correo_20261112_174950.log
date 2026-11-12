@@ -1,0 +1,44 @@
+DNS DE CORREO
+mail.empresa.test.	300	IN	A	10.44.0.10
+empresa.test.		300	IN	MX	10 mail.empresa.test.
+empresa.test.		300	IN	TXT	"v=spf1 ip4:10.44.0.10 -all"
+NOMBRE DEL CERTIFICADO SMTP
+Connecting to 10.44.0.10
+CONNECTION ESTABLISHED
+Protocol version: TLSv1.3
+Ciphersuite: TLS_AES_256_GCM_SHA384
+Peer certificate: CN=mail.empresa.test
+Hash used: SHA256
+Signature type: rsa_pss_rsae_sha256
+Verification: OK
+Verified peername: mail.empresa.test
+Peer Temp Key: X25519, 253 bits
+250 CHUNKING
+DONE
+NOMBRE DEL CERTIFICADO IMAPS
+Connecting to 10.44.0.10
+CONNECTION ESTABLISHED
+Protocol version: TLSv1.3
+Ciphersuite: TLS_AES_256_GCM_SHA384
+Peer certificate: CN=mail.empresa.test
+Hash used: SHA256
+Signature type: rsa_pss_rsae_sha256
+Verification: OK
+Verified peername: mail.empresa.test
+Negotiated TLS1.3 group: X25519MLKEM768
+DONE
+SMTP 587: certificado verificado, TLSv1.3
+SMTP: correo1 autenticado (235)
+Relay externo rechazado en RCPT: 554 5.7.1 <prueba-externa@example.net>: Relay access denied
+SMTP: 250 2.0.0 Ok: queued as D64DC80B7E
+QUEUE_ID=D64DC80B7E
+IMAPS 993: certificado verificado, TLSv1.3
+Mensaje recibido en INBOX de correo2
+From: correo1@empresa.test
+To: correo2@empresa.test
+Subject: Prueba Unidad 4.3 2026-11-12T17:49:50+00:00
+Message-ID: <179450579063.21592.16716830074660687431@empresa.test>
+Mensaje de prueba recibido y verificado en la Unidad 4.3.
+SMTP_IMAPS_VERIFICADOS
+Nov 12 17:49:50 mail postfix/lmtp[21575]: D64DC80B7E: to=<correo2@empresa.test>, relay=mail.empresa.test[private/dovecot-lmtp], delay=0.07, delays=0.02/0/0/0.04, dsn=2.0.0, status=sent (250 2.0.0 <correo2@empresa.test> ac0NNT789WpQUwAAgupOug Saved)
+ENTREGA_CORREO_4_3_VERIFICADA

@@ -1,0 +1,15 @@
+acl laboratorio {
+    127.0.0.1;
+    10.44.0.0/24;
+};
+
+options {
+    directory "/var/cache/bind";
+    listen-on { 127.0.0.1; 10.44.0.10; };
+    listen-on-v6 { none; };
+    allow-query { laboratorio; };
+    allow-recursion { laboratorio; };
+    forwarders { 1.1.1.1; };
+    forward only;
+    dnssec-validation auto;
+};

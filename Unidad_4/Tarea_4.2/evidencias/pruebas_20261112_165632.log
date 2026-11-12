@@ -1,0 +1,23 @@
+PRUEBA HTTPS Y MARIADB
+HTTP/1.1 308 Permanent Redirect
+Server: nginx/1.28.3 (Ubuntu)
+Date: Thu, 12 Nov 2026 16:56:32 GMT
+Content-Type: text/html
+Content-Length: 180
+Connection: keep-alive
+Location: https://web.empresa.test/
+
+Connecting to 10.44.0.10
+CONNECTION ESTABLISHED
+Protocol version: TLSv1.3
+Ciphersuite: TLS_AES_256_GCM_SHA384
+Peer certificate: CN=web.empresa.test
+Hash used: SHA256
+Signature type: rsa_pss_rsae_sha256
+Verification: OK
+Verified peername: web.empresa.test
+Negotiated TLS1.3 group: X25519MLKEM768
+DONE
+    <p><strong>MariaDB OK - registro consultado por PHP</strong></p>
+PRUEBA FTPS
+curl: (56) OpenSSL SSL_read: OpenSSL/3.5.5: error:0A00010B:SSL routines::wrong version number, errno 0

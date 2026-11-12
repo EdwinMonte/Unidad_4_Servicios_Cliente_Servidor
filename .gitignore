@@ -1,0 +1,7 @@
+*.key
+*.pass
+*.netrc
+*.pem
+*.csr
+*.srl
+**/__pycache__/

@@ -1,0 +1,3 @@
+nov 12 17:47:52 ubuntu dovecot[20793]: imap-login: Logged in: user=<correo2>, method=PLAIN, rip=10.44.0.10, lip=10.44.0.10, mpid=21334, TLS, session=<w20s6RdgINgKLAAK>
+nov 12 17:49:50 ubuntu dovecot[20793]: lmtp(correo2)<21328><ac0NNT789WpQUwAAgupOug>: msgid=<179450579063.21592.16716830074660687431@empresa.test>: saved mail to INBOX
+nov 12 17:49:51 ubuntu dovecot[20793]: imap-login: Logged in: user=<correo2>, method=PLAIN, rip=10.44.0.10, lip=10.44.0.10, mpid=21603, TLS, session=<XOk28Bdgbt4KLAAK>

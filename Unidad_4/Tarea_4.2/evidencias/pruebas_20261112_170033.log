@@ -1,0 +1,40 @@
+PRUEBA HTTPS Y MARIADB
+HTTP/1.1 308 Permanent Redirect
+Server: nginx/1.28.3 (Ubuntu)
+Date: Thu, 12 Nov 2026 17:00:33 GMT
+Content-Type: text/html
+Content-Length: 180
+Connection: keep-alive
+Location: https://web.empresa.test/
+
+Connecting to 10.44.0.10
+CONNECTION ESTABLISHED
+Protocol version: TLSv1.3
+Ciphersuite: TLS_AES_256_GCM_SHA384
+Peer certificate: CN=web.empresa.test
+Hash used: SHA256
+Signature type: rsa_pss_rsae_sha256
+Verification: OK
+Verified peername: web.empresa.test
+Negotiated TLS1.3 group: X25519MLKEM768
+DONE
+    <p><strong>MariaDB OK - registro consultado por PHP</strong></p>
+PRUEBA SFTP Y CHROOT
+sftp> put /root/unidad4/prueba.L4pRvNtq/original.txt /datos/solo-archivo1.txt
+sftp> get /datos/solo-archivo1.txt /root/unidad4/prueba.L4pRvNtq/sftp-descarga.txt
+sftp> cd /
+sftp> cd ..
+sftp> pwd
+Remote working directory: /
+SFTP: subida y descarga idénticas. cd .. permanece en la raíz de la jaula.
+sftp> pwd
+Remote working directory: /datos
+sftp> get /datos/solo-archivo1.txt /root/unidad4/prueba.L4pRvNtq/ajeno.txt
+File "/datos/solo-archivo1.txt" not found.
+File "/datos/solo-archivo1.txt" not found.
+SFTP: archivo2 no ve el archivo de archivo1.
+PRUEBA FTPS
+FTPS: subida y descarga idénticas.
+curl: (67) Access denied: 530
+FTPS: acceso anónimo rechazado.
+PRUEBAS_SERVIDOR_4_2_VERIFICADAS

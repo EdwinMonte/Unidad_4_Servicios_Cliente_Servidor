@@ -1,0 +1,19 @@
+# Instancia SFTP exclusiva del segmento U4_LAB.
+Port 2222
+AddressFamily inet
+ListenAddress 10.44.0.10
+PidFile /run/sshd-u4.pid
+HostKey /etc/ssh/ssh_host_ed25519_key
+UsePAM yes
+PermitRootLogin no
+AllowGroups u4transfer
+AllowUsers *@10.44.0.0/24
+PasswordAuthentication yes
+KbdInteractiveAuthentication no
+PubkeyAuthentication yes
+AuthorizedKeysFile /etc/ssh/u4-transfer-keys/%u /run/unidad4-transfer-test/%u
+ChrootDirectory /srv/u4transfer/%u
+DisableForwarding yes
+PermitTTY no
+ForceCommand internal-sftp -d /datos
+Subsystem sftp internal-sftp

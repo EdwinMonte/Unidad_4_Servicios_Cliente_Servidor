@@ -1,0 +1,13 @@
+SMTP 587: certificado verificado, TLSv1.3
+SMTP: correo1 autenticado (235)
+Relay externo rechazado en RCPT: 554 5.7.1 <prueba-externa@example.net>: Relay access denied
+SMTP: 250 2.0.0 Ok: queued as D64DC80B7E
+QUEUE_ID=D64DC80B7E
+IMAPS 993: certificado verificado, TLSv1.3
+Mensaje recibido en INBOX de correo2
+From: correo1@empresa.test
+To: correo2@empresa.test
+Subject: Prueba Unidad 4.3 2026-11-12T17:49:50+00:00
+Message-ID: <179450579063.21592.16716830074660687431@empresa.test>
+Mensaje de prueba recibido y verificado en la Unidad 4.3.
+SMTP_IMAPS_VERIFICADOS

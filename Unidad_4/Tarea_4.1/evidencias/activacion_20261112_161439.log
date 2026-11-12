@@ -1,0 +1,25 @@
+3: ens37    inet 10.44.0.10/24 brd 10.44.0.255 scope global ens37\       valid_lft forever preferred_lft forever
+default via 192.168.246.2 proto dhcp src 192.168.246.134 metric 100 
+zone empresa.test/IN: loaded serial 1
+zone 0.44.10.in-addr.arpa/IN: loaded serial 1
+2026-11-12 16:14:39.898 WARN  [kea-dhcp4.dhcpsrv/4231.131377632758912] DHCPSRV_MT_DISABLED_QUEUE_CONTROL disabling dhcp queue control when multi-threading is enabled.
+2026-11-12 16:14:39.898 WARN  [kea-dhcp4.dhcp4/4231.131377632758912] DHCP4_RESERVATIONS_LOOKUP_FIRST_ENABLED Multi-threading is enabled and host reservations lookup is always performed first.
+2026-11-12 16:14:39.898 INFO  [kea-dhcp4.dhcpsrv/4231.131377632758912] DHCPSRV_CFGMGR_NEW_SUBNET4 a new subnet has been added to configuration: 10.44.0.0/24 with params: t1=300, t2=525, valid-lifetime=600
+2026-11-12 16:14:39.900 INFO  [kea-dhcp4.dhcpsrv/4231.131377632758912] DHCPSRV_CFGMGR_SOCKET_TYPE_SELECT using socket type raw
+2026-11-12 16:14:39.901 INFO  [kea-dhcp4.dhcpsrv/4231.131377632758912] DHCPSRV_CFGMGR_ADD_IFACE listening on interface ens37
+2026-11-12 16:14:39.901 INFO  [kea-dhcp4.dhcpsrv/4231.131377632758912] DHCPSRV_CFGMGR_SOCKET_TYPE_DEFAULT "dhcp-socket-type" not specified , using default socket type raw
+2026-11-12 16:14:39.901 INFO  [kea-dhcp4.dhcpsrv/4231.131377632758912] DHCPSRV_LEASE_MGR_BACKENDS_REGISTERED the following lease backend types are available: memfile
+2026-11-12 16:14:39.902 INFO  [kea-dhcp4.hosts/4231.131377632758912] HOSTS_BACKENDS_REGISTERED the following host backend types are available: 
+2026-11-12 16:14:39.902 INFO  [kea-dhcp4.dhcpsrv/4231.131377632758912] DHCPSRV_FORENSIC_BACKENDS_REGISTERED the following forensic backend types are available: 
+2026-11-12 16:14:39.903 INFO  [kea-dhcp4.database/4231.131377632758912] CONFIG_BACKENDS_REGISTERED the following config backend types are available: 
+Synchronizing state of named.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install enable named
+web.empresa.test.
+10 mail.empresa.test.
+Removed '/run/systemd/system/kea-dhcp4-server.service'.
+Synchronizing state of kea-dhcp4-server.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install enable kea-dhcp4-server
+Created symlink '/etc/systemd/system/multi-user.target.wants/kea-dhcp4-server.service' → '/usr/lib/systemd/system/kea-dhcp4-server.service'.
+active
+active
+INFRAESTRUCTURA_4_1_LISTA

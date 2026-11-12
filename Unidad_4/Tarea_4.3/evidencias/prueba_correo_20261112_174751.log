@@ -1,0 +1,53 @@
+DNS DE CORREO
+mail.empresa.test.	300	IN	A	10.44.0.10
+empresa.test.		300	IN	MX	10 mail.empresa.test.
+empresa.test.		300	IN	TXT	"v=spf1 ip4:10.44.0.10 -all"
+NOMBRE DEL CERTIFICADO SMTP
+Connecting to 10.44.0.10
+CONNECTION ESTABLISHED
+Protocol version: TLSv1.3
+Ciphersuite: TLS_AES_256_GCM_SHA384
+Peer certificate: CN=mail.empresa.test
+Hash used: SHA256
+Signature type: rsa_pss_rsae_sha256
+Verification: OK
+Verified peername: mail.empresa.test
+Peer Temp Key: X25519, 253 bits
+250 CHUNKING
+DONE
+NOMBRE DEL CERTIFICADO IMAPS
+Connecting to 10.44.0.10
+CONNECTION ESTABLISHED
+Protocol version: TLSv1.3
+Ciphersuite: TLS_AES_256_GCM_SHA384
+Peer certificate: CN=mail.empresa.test
+Hash used: SHA256
+Signature type: rsa_pss_rsae_sha256
+Verification: OK
+Verified peername: mail.empresa.test
+Negotiated TLS1.3 group: X25519MLKEM768
+DONE
+SMTP 587: certificado verificado, TLSv1.3
+SMTP: correo1 autenticado (235)
+Relay externo rechazado en RCPT: 554 5.7.1 <prueba-externa@example.net>: Relay access denied
+SMTP: 250 2.0.0 Ok: queued as B531F80B6E
+QUEUE_ID=B531F80B6E
+IMAPS 993: certificado verificado, TLSv1.3
+Traceback (most recent call last):
+  File "/home/edwinmonte/Unidad_4/Tarea_4.3/scripts/cliente_correo.py", line 103, in <module>
+    run()
+    ~~~^^
+  File "/home/edwinmonte/Unidad_4/Tarea_4.3/scripts/cliente_correo.py", line 81, in run
+    status, data = imap.search(None, "HEADER", "Message-ID", f'"{message["Message-ID"]}"')
+                   ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/imaplib.py", line 839, in search
+    typ, dat = self._simple_command(name, *criteria)
+               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/imaplib.py", line 1372, in _simple_command
+    return self._command_complete(name, self._command(name, *args))
+                                        ~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/imaplib.py", line 1091, in _command
+    raise self.error("command %s illegal in state %s, "
+    ...<2 lines>...
+                      ', '.join(Commands[name])))
+imaplib.IMAP4.error: command SEARCH illegal in state AUTH, only allowed in states SELECTED

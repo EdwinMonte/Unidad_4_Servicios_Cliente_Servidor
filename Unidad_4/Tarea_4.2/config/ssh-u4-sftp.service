@@ -1,0 +1,12 @@
+[Unit]
+Description=Unidad 4 SFTP en U4_LAB
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+ExecStartPre=/usr/bin/install -d -m 0755 /run/sshd
+ExecStart=/usr/sbin/sshd -D -e -f /etc/ssh/sshd_config_u4
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
